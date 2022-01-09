@@ -142,7 +142,7 @@
 }
 
 #human-resource {
-  padding: 5rem 10rem;
+  padding: 5rem 10rem 7.5rem 10rem;
   background: #F4F5F7;
 }
 
@@ -201,4 +201,9 @@
   font-weight: 400;
   line-height: 24px;
   margin-top: 8px;
+}
+
+#human-resource .employee-directory {
+  width: 985px;
+  margin-top: 7rem;
 }
