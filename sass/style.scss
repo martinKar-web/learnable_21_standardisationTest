@@ -1,3 +1,9 @@
+$primaryColor: #091E42;
+$neutralColor: #5E6C84;
+$neutral-two:#F4F5F7;
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,3 +18,7 @@
 
 @import './nav';
 @import './hero';
+@import './human-resource';
+
+// variables
+

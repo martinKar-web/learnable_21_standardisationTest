@@ -1,0 +1,55 @@
+#human-resource {
+  padding: 5rem 10rem;
+  background: $neutral-two;
+
+  header {
+    width: 40%;
+
+    h2 {
+      font-size: 48px;
+      color: $primaryColor;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 24px;
+      margin-top: 1.5rem;
+      color: $neutralColor;
+    }
+  }
+
+  .hr-itemsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    gap: 1.5rem;
+
+    .hr-item {
+      flex: 1;
+      padding: 2rem 1rem 2.5rem 1rem;
+      border-radius: 1rem;
+      background: #ffffff;
+
+      .hrItem__logo {
+        width: 64px;
+        height: 64px;
+      }
+
+      .hrItem__title {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        margin-top: 2rem;
+        color: $primaryColor;
+      }
+
+      .hrItem__info {
+        color: $neutralColor;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 8px;
+      }
+    }
+  }
+}
