@@ -6,7 +6,6 @@
 
 .nav-bar {
   height: 72px;
-  border-bottom: 1px solid #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,8 +51,9 @@
 }
 
 .nav-list li {
-  font-size: .8rem;
-  font-weight: 500;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .btn-container {
@@ -87,4 +87,56 @@
   color: #ffffff;
   background: #0052cc;
   margin-left: 1rem;
+}
+
+#hero {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 5rem 0 10rem;
+}
+
+#hero .text-wrapper {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+}
+
+#hero .text-wrapper h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #091e42;
+  line-height: 57.6px;
+}
+
+#hero .text-wrapper p {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+  color: #344563;
+  margin-top: 36px;
+}
+
+#hero .img-wrapper {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#hero .img-wrapper img {
+  width: 650px;
 }
