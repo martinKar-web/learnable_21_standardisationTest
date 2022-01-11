@@ -13,9 +13,13 @@
       padding: 2rem 2rem 2rem 0;
 
       h2 {
-        font-size: 42px;
+        font-size: 48px;
         line-height: 64.8px;
         color: $headingColor;
+      }
+
+      .heading{
+        font-size: 47px;
       }
 
       p {
@@ -58,10 +62,6 @@
           margin-top: 8px;
         }
       }
-    }
-
-    .right-section__finance{
-      margin-top: 7.5rem;
     }
   }
 

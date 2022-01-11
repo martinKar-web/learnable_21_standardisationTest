@@ -234,9 +234,13 @@
 }
 
 #admin-nd-logistics .header .left-section h2 {
-  font-size: 42px;
+  font-size: 48px;
   line-height: 64.8px;
   color: #091e42;
+}
+
+#admin-nd-logistics .header .left-section .heading {
+  font-size: 47px;
 }
 
 #admin-nd-logistics .header .left-section p {
@@ -288,10 +292,6 @@
   margin-top: 8px;
 }
 
-#admin-nd-logistics .header .right-section__finance {
-  margin-top: 7.5rem;
-}
-
 #admin-nd-logistics .img-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,4 +303,37 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 7.5rem;
+}
+
+#partners-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7.5rem;
+  margin-bottom: 13rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#partners-container .logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  background: #091e42;
 }

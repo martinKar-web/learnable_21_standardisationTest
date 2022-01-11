@@ -1,0 +1,14 @@
+#partners-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7.5rem;
+  margin-bottom: 13rem;
+  flex: 1;
+
+  .logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
