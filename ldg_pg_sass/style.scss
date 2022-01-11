@@ -1,8 +1,6 @@
-$primaryColor: #091E42;
-$neutralColor: #5E6C84;
-$neutral-two:#F4F5F7;
-
-
+$headingColor: #091e42;
+$paragraphColor: #5e6c84;
+$paragraph-two: #f4f5f7;
 
 * {
   margin: 0;
@@ -19,6 +17,4 @@ $neutral-two:#F4F5F7;
 @import './nav';
 @import './hero';
 @import './human-resource';
-
-// variables
-
+@import './admn&lgstcs'; // variables

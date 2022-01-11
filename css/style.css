@@ -143,7 +143,7 @@
 
 #human-resource {
   padding: 5rem 10rem 7.5rem 10rem;
-  background: #F4F5F7;
+  background: #f4f5f7;
 }
 
 #human-resource header {
@@ -152,14 +152,14 @@
 
 #human-resource header h2 {
   font-size: 48px;
-  color: #091E42;
+  color: #091e42;
 }
 
 #human-resource header p {
   font-size: 1rem;
   line-height: 24px;
   margin-top: 1.5rem;
-  color: #5E6C84;
+  color: #5e6c84;
 }
 
 #human-resource .hr-itemsContainer {
@@ -170,14 +170,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 5rem;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 #human-resource .hr-itemsContainer .hr-item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 2rem 1rem 2.5rem 1rem;
+  padding: 2rem 2rem 2.5rem 2rem;
   border-radius: 1rem;
   background: #ffffff;
 }
@@ -192,11 +192,11 @@
   line-height: 32px;
   font-weight: 700;
   margin-top: 2rem;
-  color: #091E42;
+  color: #091e42;
 }
 
 #human-resource .hr-itemsContainer .hr-item .hrItem__info {
-  color: #5E6C84;
+  color: #5e6c84;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -206,4 +206,101 @@
 #human-resource .employee-directory {
   width: 985px;
   margin-top: 7rem;
+}
+
+#admin-nd-logistics {
+  padding: 5rem 10rem;
+  background: #ffffff;
+}
+
+#admin-nd-logistics .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+#admin-nd-logistics .header .left-section {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  padding: 2rem 2rem 2rem 0;
+}
+
+#admin-nd-logistics .header .left-section h2 {
+  font-size: 42px;
+  line-height: 64.8px;
+  color: #091e42;
+}
+
+#admin-nd-logistics .header .left-section p {
+  font-size: 1rem;
+  line-height: 24px;
+  color: #5e6c84;
+  margin-top: 2rem;
+}
+
+#admin-nd-logistics .header .right-section {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+#admin-nd-logistics .header .right-section .right-section__item {
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+#admin-nd-logistics .header .right-section .right-section__item .right-section__logo {
+  height: 64px;
+  width: 64px;
+}
+
+#admin-nd-logistics .header .right-section .right-section__item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 2rem;
+  color: #091e42;
+}
+
+#admin-nd-logistics .header .right-section .right-section__item p {
+  font-size: 14px;
+  color: #5e6c84;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 8px;
+}
+
+#admin-nd-logistics .header .right-section__finance {
+  margin-top: 7.5rem;
+}
+
+#admin-nd-logistics .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7.5rem;
 }
