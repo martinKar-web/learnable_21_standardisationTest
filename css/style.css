@@ -151,7 +151,7 @@
 }
 
 #human-resource header h2 {
-  font-size: 48px;
+  font-size: 47px;
   color: #091e42;
 }
 
@@ -336,4 +336,60 @@
 
 footer {
   background: #091e42;
+  padding: 4.4375rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .left-section p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+footer .right-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border: 2pxx solid white;
+}
+
+footer .right-section .icons__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 24px;
+}
+
+footer .right-section .copyright {
+  margin-top: 8px;
+}
+
+footer .right-section .copyright p {
+  font-size: 1rem;
+  line-height: 24px;
+  color: #fafbfc;
+  font-weight: 400;
 }
