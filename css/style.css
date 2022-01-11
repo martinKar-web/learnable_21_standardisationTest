@@ -16,9 +16,14 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10rem;
+  background: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
-.logo__container {
+.left-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,13 +33,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 35%;
+  width: 331px;
 }
 
-.logo__container .logo {
-  color: #0052cc;
-  font-weight: 900;
-  font-size: 2rem;
+.left-section .logo {
+  height: 24px;
+  width: 144px;
+  cursor: pointer;
 }
 
 .nav-list {
@@ -54,6 +59,7 @@
   font-size: .9rem;
   font-weight: 400;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .btn-container {
@@ -68,13 +74,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: auto;
+  width: 155px;
 }
 
 .btn-container .btn {
   border-radius: 4px;
   padding: 10px 12px;
   border: none;
+  cursor: pointer;
 }
 
 .btn-container .btn_signUp {
@@ -346,6 +353,19 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+footer .left-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 footer .left-section p {

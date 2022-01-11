@@ -1,23 +1,26 @@
 .nav-bar{
   height: 72px;
-  //border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10rem;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
-.logo__container{
+.left-section{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 35%;
+  width: 331px;
   //border: 2px solid red;
 
   .logo{
-    color: #0052cc;
-    font-weight: 900;
-    font-size: 2rem;
+    height: 24px;
+    width: 144px;
+    cursor: pointer;
   }
 }
 
@@ -30,19 +33,20 @@
     font-size: .9rem;
     font-weight: 400;
     line-height: 24px;
+    cursor: pointer;
   }
 }
 
 .btn-container{
   @include flexBox;
   justify-content: space-between;
-  //border: 2px solid red;
-  width: auto;
+  width: 155px;
 
   .btn{
     border-radius: 4px;
     padding: 10px 12px;
     border: none;
+    cursor: pointer;
   }
 
   .btn_signUp{
