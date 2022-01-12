@@ -1,13 +1,16 @@
 #human-resource {
-  padding: 5rem 10rem 7.5rem 10rem;
+  //padding: 5rem 10rem 7.5rem 10rem;
+  padding: 5rem 10rem;
   background: $paragraph-two;
 
   header {
     width: 40%;
 
     h2 {
-      font-size: 47px;
+      font-size: 48px;
       color: $headingColor;
+      font-weight: 700;
+      line-height: 60px;
     }
 
     p {

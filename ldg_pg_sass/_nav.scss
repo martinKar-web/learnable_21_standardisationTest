@@ -8,6 +8,12 @@
   position: sticky;
   top: 0;
   left: 0;
+
+  @media screen and (max-width:481px) {
+    height: 60px;
+    padding: 14px 1rem;
+    border: 1px solid orangered;
+  }
 }
 
 .left-content{

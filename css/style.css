@@ -1,7 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Circular Std', sans-serif;
+}
+
+p {
+  font-weight: 450;
 }
 
 .nav-bar {
@@ -21,6 +25,14 @@
   position: sticky;
   top: 0;
   left: 0;
+}
+
+@media screen and (max-width: 481px) {
+  .nav-bar {
+    height: 60px;
+    padding: 14px 1rem;
+    border: 1px solid orangered;
+  }
 }
 
 .left-content {
@@ -104,15 +116,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 2rem 5rem 10rem 10rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 6rem 10rem 9.75rem;
+}
+
+@media screen and (max-width: 481px) {
+  #hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid red;
+    padding: 1rem;
+  }
 }
 
 #hero .text-wrapper {
-  -webkit-box-flex: 0.6;
-      -ms-flex: 0.6;
-          flex: 0.6;
+  -webkit-box-flex: 0.45;
+      -ms-flex: 0.45;
+          flex: 0.45;
 }
 
 #hero .text-wrapper h1 {
@@ -125,15 +149,14 @@
 #hero .text-wrapper p {
   font-size: 1rem;
   line-height: 24px;
-  font-weight: 400;
   color: #344563;
   margin-top: 36px;
 }
 
 #hero .img-wrapper {
-  -webkit-box-flex: 0.4;
-      -ms-flex: 0.4;
-          flex: 0.4;
+  -webkit-box-flex: 0.55;
+      -ms-flex: 0.55;
+          flex: 0.55;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,12 +167,24 @@
       justify-content: space-around;
 }
 
+@media screen and (max-width: 481px) {
+  #hero .img-wrapper {
+    width: 100%;
+  }
+}
+
 #hero .img-wrapper img {
-  width: 650px;
+  width: 100%;
+}
+
+@media screen and (max-width: 481px) {
+  #hero .img-wrapper img {
+    width: 100%;
+  }
 }
 
 #human-resource {
-  padding: 5rem 10rem 7.5rem 10rem;
+  padding: 5rem 10rem;
   background: #f4f5f7;
 }
 
@@ -158,8 +193,10 @@
 }
 
 #human-resource header h2 {
-  font-size: 47px;
+  font-size: 48px;
   color: #091e42;
+  font-weight: 700;
+  line-height: 60px;
 }
 
 #human-resource header p {
@@ -294,7 +331,6 @@
 #admin-nd-logistics .header .right-section .right-section__item p {
   font-size: 14px;
   color: #5e6c84;
-  font-weight: 400;
   line-height: 20px;
   margin-top: 8px;
 }
@@ -359,7 +395,6 @@ footer .left-section p {
   color: #ffffff;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 400;
 }
 
 footer .right-section {
@@ -396,7 +431,6 @@ footer .right-section .copyright {
 
 footer .right-section .copyright p {
   font-size: 1rem;
-  line-height: 24px;
+  line-height: 16px;
   color: #fafbfc;
-  font-weight: 400;
 }

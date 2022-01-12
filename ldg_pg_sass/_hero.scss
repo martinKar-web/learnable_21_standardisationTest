@@ -2,11 +2,18 @@
   height: 70vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 2rem 5rem 10rem 10rem;
+  justify-content: center;
+  padding: 2rem 6rem 10rem 9.75rem;
+
+  @media screen and (max-width: 481px) {
+    flex-direction: column;
+    border: 1px solid red;
+    padding: 1rem;
+  }
 
   .text-wrapper {
-    flex: 0.6;
+    flex: 0.45;
+    //border: 1px solid red;
 
     h1 {
       font-size: 48px;
@@ -18,19 +25,28 @@
     p {
       font-size: 1rem;
       line-height: 24px;
-      font-weight: 400;
       color: #344563;
       margin-top: 36px;
     }
   }
+
   .img-wrapper {
-    flex: 0.4   ;
+    //border: 1px solid green;
+    flex: 0.55;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
+    @media screen and (max-width: 481px) {
+      width: 100%;
+    }
+
     img {
-      width: 650px;
+      width: 100%;
+
+      @media screen and (max-width: 481px) {
+        width: 100%;
+      }
     }
   }
 }
