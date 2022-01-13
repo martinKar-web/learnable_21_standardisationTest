@@ -3,6 +3,10 @@
   padding: 5rem 10rem;
   background: $paragraph-two;
 
+  @media (max-width: 481px) {
+    padding: 1rem;
+  }
+
   header {
     width: 40%;
 
@@ -21,13 +25,15 @@
     }
   }
 
-  
-
   .hr-itemsContainer {
     display: flex;
     justify-content: space-between;
     margin-top: 5rem;
     gap: 24px;
+
+    @media (max-width: 481px) {
+      flex-direction: column;
+    }
 
     .hr-item {
       flex: 1;
@@ -61,6 +67,9 @@
   .employee-directory {
     width: 985px;
     margin-top: 7rem;
+
+    @media (max-width:481px){
+      width: 100%;
+    }
   }
 }
-

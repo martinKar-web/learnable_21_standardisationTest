@@ -188,6 +188,12 @@ p {
   background: #f4f5f7;
 }
 
+@media (max-width: 481px) {
+  #human-resource {
+    padding: 1rem;
+  }
+}
+
 #human-resource header {
   width: 40%;
 }
@@ -215,6 +221,15 @@ p {
           justify-content: space-between;
   margin-top: 5rem;
   gap: 24px;
+}
+
+@media (max-width: 481px) {
+  #human-resource .hr-itemsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #human-resource .hr-itemsContainer .hr-item {
@@ -252,9 +267,21 @@ p {
   margin-top: 7rem;
 }
 
+@media (max-width: 481px) {
+  #human-resource .employee-directory {
+    width: 100%;
+  }
+}
+
 #admin-nd-logistics {
   padding: 5rem 10rem;
   background: #ffffff;
+}
+
+@media (max-width: 481px) {
+  #admin-nd-logistics {
+    padding: 1rem;
+  }
 }
 
 #admin-nd-logistics .header {
@@ -268,6 +295,15 @@ p {
       -ms-flex-align: center;
           align-items: center;
   gap: 24px;
+}
+
+@media (max-width: 481px) {
+  #admin-nd-logistics .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #admin-nd-logistics .header .left-section {
@@ -310,9 +346,24 @@ p {
   gap: 24px;
 }
 
+@media (max-width: 481px) {
+  #admin-nd-logistics .header .right-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #admin-nd-logistics .header .right-section .right-section__item {
   padding: 2rem;
   border-radius: 16px;
+}
+
+@media (max-width: 481px) {
+  #admin-nd-logistics .header .right-section .right-section__item {
+    padding: 1rem;
+  }
 }
 
 #admin-nd-logistics .header .right-section .right-section__item .right-section__logo {
@@ -348,10 +399,24 @@ p {
   margin-top: 7.5rem;
 }
 
+@media (max-width: 481px) {
+  #admin-nd-logistics .img-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 481px) {
+  #admin-nd-logistics .img-container img {
+    width: 100%;
+  }
+}
+
 #partners-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
