@@ -1,15 +1,39 @@
 #partners-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 7.5rem;
   margin-bottom: 13rem;
-  flex: 1;
+  border: 1px solid red;
+
+  @media (max-width: 481px) {
+    flex-direction: column;
+    //padding: 1rem 2rem;
+    //width: 100;
+  }
 
   .logo-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+  }
+
+  .grp {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @media (max-width: 481px) {
+      border: 1px solid orange;
+      flex-direction: column;
+    }
+  }
+
+  .grp-one {
+    flex: 0.5;
+  }
+
+  .grp-two {
+    flex: 0.5;
   }
 }

@@ -5,11 +5,25 @@ footer {
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 481px) {
+    flex-direction: column;
+    height: 337px;
+  }
+
   .left-section {
+    @media (max-width: 481px) {
+      height: 200px;
+      justify-content: space-around;
+      align-items: center;
+    }
     p {
       color: #ffffff;
       font-size: 18px;
       line-height: 26px;
+
+      @media (max-width: 481px) {
+        text-align: center;
+      }
     }
   }
 
@@ -18,6 +32,12 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     border: 2pxx solid white;
+
+    @media (max-width: 481px) {
+      height: 200px;
+      justify-content: space-around;
+      align-items: center;
+    }
 
     .icons__wrapper {
       display: flex;
@@ -34,6 +54,10 @@ footer {
         font-size: 1rem;
         line-height: 16px;
         color: #fafbfc;
+
+        @media (max-width: 481px) {
+          text-align: center;
+        }
       }
     }
   }
