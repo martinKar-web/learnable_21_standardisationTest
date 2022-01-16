@@ -20,8 +20,10 @@ footer {
       color: #ffffff;
       font-size: 18px;
       line-height: 26px;
+      margin-top: 0.9rem;
 
       @media (max-width: 481px) {
+        font-size: 1rem;
         text-align: center;
       }
     }
@@ -57,6 +59,7 @@ footer {
 
         @media (max-width: 481px) {
           text-align: center;
+          font-size: 12px;
         }
       }
     }

@@ -768,10 +768,12 @@ footer .left-section p {
   color: #ffffff;
   font-size: 18px;
   line-height: 26px;
+  margin-top: 0.9rem;
 }
 
 @media (max-width: 481px) {
   footer .left-section p {
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -828,5 +830,6 @@ footer .right-section .copyright p {
 @media (max-width: 481px) {
   footer .right-section .copyright p {
     text-align: center;
+    font-size: 12px;
   }
 }
