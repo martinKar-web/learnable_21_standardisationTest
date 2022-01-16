@@ -1,5 +1,8 @@
 #human-resource {
-  //padding: 5rem 10rem 7.5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 5rem 10rem;
   background: $paragraph-two;
 
@@ -9,6 +12,7 @@
 
   header {
     width: 40%;
+    align-self: start;
 
     @media (max-width: 481px) {
       width: 100%;

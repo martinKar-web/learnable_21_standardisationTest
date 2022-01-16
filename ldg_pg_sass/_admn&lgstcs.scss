@@ -4,7 +4,6 @@
 
   @media (max-width: 481px) {
     padding: 5rem 1rem;
-    border: 2px solid red;
   }
 
   .header {
@@ -25,11 +24,15 @@
         font-size: 48px;
         line-height: 64.8px;
         color: $headingColor;
+
+        @media (max-width:481px){
+          font-size: 24px;
+          line-height: 32.4px;
+        }
+
       }
 
-      .heading {
-        font-size: 47px;
-      }
+      
 
       p {
         font-size: 1rem;
@@ -61,6 +64,11 @@
         .right-section__logo {
           height: 64px;
           width: 64px;
+
+          @media (max-width:481px) {
+            height: 48%;
+            width: 48px;
+          }
         }
 
         h3 {
@@ -69,6 +77,11 @@
           line-height: 32px;
           margin-top: 2rem;
           color: $headingColor;
+
+          @media (max-width:481px) {
+            font-size: 19px;
+            line-height: 24px;
+          }
         }
 
         p {

@@ -359,6 +359,19 @@ p {
 }
 
 #human-resource {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5rem 10rem;
   background: #f4f5f7;
 }
@@ -371,6 +384,9 @@ p {
 
 #human-resource header {
   width: 40%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 @media (max-width: 481px) {
@@ -496,7 +512,6 @@ p {
 @media (max-width: 481px) {
   #admin-nd-logistics {
     padding: 5rem 1rem;
-    border: 2px solid red;
   }
 }
 
@@ -535,8 +550,11 @@ p {
   color: #091e42;
 }
 
-#admin-nd-logistics .header .left-section .heading {
-  font-size: 47px;
+@media (max-width: 481px) {
+  #admin-nd-logistics .header .left-section h2 {
+    font-size: 24px;
+    line-height: 32.4px;
+  }
 }
 
 #admin-nd-logistics .header .left-section p {
@@ -587,12 +605,26 @@ p {
   width: 64px;
 }
 
+@media (max-width: 481px) {
+  #admin-nd-logistics .header .right-section .right-section__item .right-section__logo {
+    height: 48%;
+    width: 48px;
+  }
+}
+
 #admin-nd-logistics .header .right-section .right-section__item h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   margin-top: 2rem;
   color: #091e42;
+}
+
+@media (max-width: 481px) {
+  #admin-nd-logistics .header .right-section .right-section__item h3 {
+    font-size: 19px;
+    line-height: 24px;
+  }
 }
 
 #admin-nd-logistics .header .right-section .right-section__item p {
@@ -654,8 +686,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -674,7 +707,6 @@ p {
 
 @media (max-width: 481px) {
   #partners-container .grp {
-    border: 1px solid orange;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

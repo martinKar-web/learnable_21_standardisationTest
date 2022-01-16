@@ -4,17 +4,16 @@
   align-items: center;
   margin-top: 7.5rem;
   margin-bottom: 13rem;
-  //border: 1px solid red;
+  
 
   @media (max-width: 481px) {
     flex-direction: column;
-    //padding: 1rem 2rem;
-    //width: 100;
+    //width: 100vw;
   }
 
   .logo-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -24,7 +23,6 @@
     justify-content: space-around;
 
     @media (max-width: 481px) {
-      border: 1px solid orange;
       flex-direction: column;
     }
   }
