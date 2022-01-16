@@ -285,7 +285,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 1rem;
+    padding: 5rem 1rem;
     margin-top: 0px;
     z-index: -10;
     position: relative;
@@ -694,6 +694,12 @@ p {
           align-items: center;
 }
 
+#partners-container .logo-wrapper img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 #partners-container .grp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -707,10 +713,7 @@ p {
 
 @media (max-width: 481px) {
   #partners-container .grp {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    gap: 24px;
   }
 }
 
