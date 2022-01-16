@@ -5,10 +5,11 @@
   justify-content: center;
   padding: 2rem 6rem 10rem 9.75rem;
 
-  @media screen and (max-width: 481px) {
+  @media (max-width: 481px) {
     flex-direction: column;
     border: 1px solid red;
     padding: 1rem;
+    margin-top: 60px;
   }
 
   .text-wrapper {

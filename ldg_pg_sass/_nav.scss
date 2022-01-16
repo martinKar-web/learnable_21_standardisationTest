@@ -1,4 +1,58 @@
-.nav-bar{
+
+.mobile-nav {
+  display: none;
+  background-color: #fff;
+
+  @media (max-width: 481px) {
+    display: flex;
+    height: 60px;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    border-bottom: 2px solid green;
+  }
+
+  .mobile-logo{
+    height: 32px;
+    width: 32px;
+  }
+
+  .hamburger {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .line-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+      height: 17px;
+    }
+
+    .line {
+      height: 3px;
+      background: #1a1a1a;
+      border-radius: 2px;
+    }
+    .line1 {
+      width: 20px;
+    }
+    .line2 {
+      width: 15px;
+    }
+    .line3 {
+      width: 10px;
+    }
+  }
+
+  
+}
+
+.nav-bar {
   height: 72px;
   display: flex;
   justify-content: space-between;
@@ -9,60 +63,105 @@
   top: 0;
   left: 0;
 
-  @media screen and (max-width:481px) {
-    height: 60px;
-    padding: 14px 1rem;
-    border: 1px solid orangered;
+  @media (max-width: 481px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 375px;
+    padding: 5rem 1rem;
+    border-bottom: 2px solid red;
+    box-sizing: border-box;
+    transform: translateY(-375px);
+    z-index: -5;
+
+    position: absolute;
+    top: 60px;
+    left: 0;
   }
 }
 
-.left-content{
+
+.left-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 331px;
 
-  .logo{
+  @media (max-width: 481px){
+    flex-direction: column;
+    //border: 2px solid red;
+    align-items: start;
+  }
+
+  .logo {
     height: 24px;
     width: 144px;
     cursor: pointer;
+
+    @media (max-width: 481px) {
+      display: none;
+    }
   }
 }
 
-.nav-list{
+.nav-list {
   @include flexBox;
   list-style: none;
   width: 35%;
 
-  li{
-    font-size: .9rem;
+  @media (max-width: 481px){
+    gap: 32px;
+    flex-direction: column;
+    //border: 2px solid blue;
+    align-items: start;
+  }
+
+  li {
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 24px;
     cursor: pointer;
   }
 }
 
-.btn-container{
+.btn-container {
   @include flexBox;
   justify-content: space-between;
   width: 155px;
 
-  .btn{
+  @media (max-width: 481px){
+    gap: 24px;
+    flex-direction: column;
+    width: 100%;
+    z-index: -5;
+
+  }
+
+  .btn {
     border-radius: 4px;
     padding: 10px 12px;
     border: none;
     cursor: pointer;
+
+    @media (max-width: 481px){
+      width: 100%;
+    }
   }
 
-  .btn_signUp{
+  .btn_signUp {
     color: #212121;
     background: #ffffff;
     border: 1px solid #ccc;
   }
 
-  .btn_signIn{
+  .btn_signIn {
     color: #ffffff;
     background: #0052cc;
     margin-left: 1rem;
+
+    @media (max-width:481px){
+      margin-left: 0;
+    }
   }
 }
