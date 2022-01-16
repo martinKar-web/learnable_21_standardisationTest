@@ -15,6 +15,10 @@ p {
 
 @media (max-width: 481px) {
   .mobile-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -27,7 +31,6 @@ p {
         -ms-flex-align: center;
             align-items: center;
     z-index: 999;
-    border-bottom: 2px solid green;
   }
 }
 
@@ -102,35 +105,37 @@ p {
   position: sticky;
   top: 0;
   left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 481px) {
   .nav-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
     height: 375px;
+    width: 100vw;
     padding: 5rem 1rem;
-    border-bottom: 2px solid red;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -webkit-transform: translateY(-375px);
             transform: translateY(-375px);
-    z-index: -5;
+    z-index: 5;
     position: absolute;
     top: 60px;
     left: 0;
+    background: #ffffff;
   }
+}
+
+.open {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
 }
 
 .left-content {
@@ -226,7 +231,6 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    z-index: -5;
   }
 }
 
@@ -281,9 +285,10 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border: 1px solid red;
     padding: 1rem;
-    margin-top: 60px;
+    margin-top: 0px;
+    z-index: -10;
+    position: relative;
   }
 }
 
@@ -298,6 +303,14 @@ p {
   font-weight: 700;
   color: #091e42;
   line-height: 57.6px;
+  z-index: -100;
+}
+
+@media (max-width: 481px) {
+  #hero .text-wrapper h1 {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
 }
 
 #hero .text-wrapper p {
@@ -305,6 +318,14 @@ p {
   line-height: 24px;
   color: #344563;
   margin-top: 36px;
+}
+
+@media (max-width: 481px) {
+  #hero .text-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 24px;
+  }
 }
 
 #hero .img-wrapper {
