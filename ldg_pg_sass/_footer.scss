@@ -12,15 +12,25 @@ footer {
   }
 
   .left-section {
-    .footer-logo{
-      align-self: center;
-    }
 
     @media (max-width: 481px) {
-      height: 200px;
+      display: flex;
+      flex-direction: column;
       justify-content: space-around;
+      height: 50px;
       align-items: center;
+      border: 2px solid #ffffff;
+      gap: 2rem;
     }
+
+    .footer-logo {
+      align-self: center;
+
+      @media (max-width:481px) {
+        margin: 0;
+      }
+    }
+
     p {
       color: #ffffff;
       font-size: 18px;
@@ -30,6 +40,7 @@ footer {
       @media (max-width: 481px) {
         font-size: 1rem;
         text-align: center;
+        margin: 0;
       }
     }
   }
@@ -38,7 +49,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    border: 2pxx solid white;
+    border: 2px solid white;
 
     @media (max-width: 481px) {
       height: 200px;
