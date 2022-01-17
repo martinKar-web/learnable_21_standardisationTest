@@ -23,7 +23,7 @@ p {
     display: -ms-flexbox;
     display: flex;
     height: 60px;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -285,7 +285,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 5rem 2rem;
+    padding: 5rem 1.5rem;
     margin-top: 0px;
     z-index: -10;
     position: relative;
@@ -378,7 +378,7 @@ p {
 
 @media (max-width: 481px) {
   #human-resource {
-    padding: 5rem 2rem;
+    padding: 5rem 1.5rem;
   }
 }
 
@@ -511,7 +511,7 @@ p {
 
 @media (max-width: 481px) {
   #admin-nd-logistics {
-    padding: 5rem 2rem;
+    padding: 5rem 1.5rem;
   }
 }
 
@@ -799,7 +799,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 337px;
-    padding: 5rem 2rem;
+    padding: 5rem 1.5rem;
   }
 }
 

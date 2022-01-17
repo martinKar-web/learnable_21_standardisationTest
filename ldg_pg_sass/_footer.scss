@@ -8,14 +8,14 @@ footer {
   @media (max-width: 481px) {
     flex-direction: column;
     height: 337px;
-    padding: 5rem 2rem;
+    padding: 5rem 1.5rem;
   }
 
   .left-section {
     .footer-logo{
       align-self: center;
     }
-    
+
     @media (max-width: 481px) {
       height: 200px;
       justify-content: space-around;
