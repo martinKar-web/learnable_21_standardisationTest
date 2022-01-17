@@ -798,7 +798,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 337px;
+    height: 300px;
     padding: 5rem 1.5rem;
   }
 }
@@ -843,7 +843,8 @@ footer .left-section p {
 
 @media (max-width: 481px) {
   footer .left-section p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 450;
     text-align: center;
     margin: 0;
   }
@@ -901,5 +902,6 @@ footer .right-section .copyright p {
   footer .right-section .copyright p {
     text-align: center;
     font-size: 12px;
+    width: 200px;
   }
 }
