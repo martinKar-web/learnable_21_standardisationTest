@@ -285,7 +285,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 5rem 1rem;
+    padding: 5rem 2rem;
     margin-top: 0px;
     z-index: -10;
     position: relative;
@@ -378,7 +378,7 @@ p {
 
 @media (max-width: 481px) {
   #human-resource {
-    padding: 5rem 1rem;
+    padding: 5rem 2rem;
   }
 }
 
@@ -511,7 +511,7 @@ p {
 
 @media (max-width: 481px) {
   #admin-nd-logistics {
-    padding: 5rem 1rem;
+    padding: 5rem 2rem;
   }
 }
 
@@ -682,6 +682,12 @@ p {
   }
 }
 
+@media (max-width: 481px) {
+  #partners-container .desktop-grp {
+    display: none;
+  }
+}
+
 #partners-container .logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -723,15 +729,58 @@ p {
           flex: 0.5;
 }
 
+@media (max-width: 481px) {
+  #partners-container .grp-one {
+    border: 2px solid red;
+  }
+}
+
 #partners-container .grp-two {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
 }
 
+@media (max-width: 481px) {
+  #partners-container .grp-two {
+    border: 2px solid green;
+  }
+}
+
+#partners-container .mobile-grp {
+  display: none;
+}
+
+@media (max-width: 481px) {
+  #partners-container .mobile-grp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #partners-container .mobile-grp .mobile-grp-one,
+  #partners-container .mobile-grp .mobile-grp-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+  }
+  #partners-container .mobile-grp .mobile-grp-two {
+    margin-top: 2rem;
+  }
+}
+
 footer {
   background: #091e42;
-  padding: 4.4375rem 10rem;
+  padding: 5rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -750,7 +799,14 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 337px;
+    padding: 5rem 2rem;
   }
+}
+
+footer .left-section .footer-logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (max-width: 481px) {

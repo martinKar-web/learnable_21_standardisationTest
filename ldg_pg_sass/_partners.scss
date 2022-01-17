@@ -4,11 +4,15 @@
   align-items: center;
   margin-top: 7.5rem;
   margin-bottom: 13rem;
-  
 
   @media (max-width: 481px) {
     flex-direction: column;
-    //width: 100vw;
+  }
+
+  .desktop-grp {
+    @media (max-width: 481px) {
+      display: none;
+    }
   }
 
   .logo-wrapper {
@@ -16,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
 
-    img{
+    img {
       width: 100%;
       object-fit: contain;
     }
@@ -34,9 +38,40 @@
 
   .grp-one {
     flex: 0.5;
+
+    @media (max-width: 481px) {
+      border: 2px solid red;
+    }
   }
 
   .grp-two {
     flex: 0.5;
+
+    @media (max-width: 481px) {
+      border: 2px solid green;
+    }
+  }
+
+  .mobile-grp {
+    display: none;
+
+    @media (max-width: 481px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .mobile-grp-one,
+      .mobile-grp-two {
+        display: flex;
+        gap: 24px;
+      }
+
+      //.mobile-grp-one {
+      //}
+      .mobile-grp-two {
+        margin-top: 2rem;
+      }
+    }
   }
 }

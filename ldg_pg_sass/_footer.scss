@@ -1,6 +1,6 @@
 footer {
   background: $headingColor;
-  padding: 4.4375rem 10rem;
+  padding: 5rem 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,9 +8,14 @@ footer {
   @media (max-width: 481px) {
     flex-direction: column;
     height: 337px;
+    padding: 5rem 2rem;
   }
 
   .left-section {
+    .footer-logo{
+      align-self: center;
+    }
+    
     @media (max-width: 481px) {
       height: 200px;
       justify-content: space-around;
